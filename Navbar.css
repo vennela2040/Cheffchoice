@@ -1,0 +1,70 @@
+/* Navbar styles */
+.navbar {
+  background-color: #CD853F; /* Peru color */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the navbar is above other content */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff; /* White color for the logo */
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff; /* White color for the links */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Lighten the background on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo h1 {
+    margin-bottom: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+  }
+
+  .nav-links a {
+    padding: 0.5rem;
+  }
+}
